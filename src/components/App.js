@@ -15,8 +15,8 @@ const App = (slides) => {
   return (
     <>
     <div>
-      <h1>{slides[{index}].title}</h1>
-      <p>{slides[{index}].t}</p>
+      <h1 data-testid="title">{slides[{index}].title}</h1>
+      <p data-testid="text">{slides[{index}].t}</p>
     </div>
     <button data-testid="button-prev" disabled={index===0} onClick={decrement}>Prev</button>
     <button data-testid="button-restart" disabled={index===0} onClick={restart}>Restart</button>
